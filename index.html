@@ -1,107 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trupti Bhatkar | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Trupti Bhatkar | AI & ML Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: #f7f9fc;
-      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
     }
 
     header {
-      background-color: #34495e;
-      padding: 30px;
+      background-color: #273c75;
       color: white;
+      padding: 30px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .contact a {
+      color: #273c75;
+      text-decoration: none;
+      margin: 0 10px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
     h2 {
-      color: #2c3e50;
-      margin-top: 40px;
-      font-size: 26px;
-    }
-
-    .info {
+      color: #2d3436;
+      font-size: 1.8em;
       margin-bottom: 20px;
     }
 
-    .info a {
-      color: #2980b9;
-      text-decoration: none;
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    .info a:hover {
-      text-decoration: underline;
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s;
     }
 
-    ul.projects {
-      padding-left: 20px;
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    ul.projects li {
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
       margin-bottom: 12px;
-      font-size: 17px;
+      color: #636e72;
     }
 
-    ul.projects a {
-      color: #27ae60;
-      font-weight: bold;
+    .card-content a {
+      text-decoration: none;
+      background-color: #273c75;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 0.9em;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #ecf0f1;
+      background-color: #dfe6e9;
+      color: #636e72;
       margin-top: 40px;
-      color: #7f8c8d;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>👩‍💻 Trupti Bhatkar</h1>
+    <h1>Trupti Bhatkar</h1>
     <p>MCA (AI & ML) | ML Intern | Python Developer | Open to Work</p>
   </header>
 
-  <div class="container">
-    <div class="info">
-      <p>📧 Email: <a href="mailto:truptibhatkar2002@gmail.com">truptibhatkar2002@gmail.com</a></p>
-      <p>🔗 GitHub: <a href="https://github.com/truptibhatkar" target="_blank">github.com/truptibhatkar</a></p>
-    </div>
+  <div class="contact">
+    📧 <a href="mailto:truptibhatkar2002@gmail.com">Email</a> |
+    💻 <a href="https://github.com/truptibhatkar" target="_blank">GitHub</a>
+  </div>
 
+  <div class="container">
     <h2>🚀 Projects</h2>
-    <ul class="projects">
-      <li>💉 <strong>Diabetes Prediction Website</strong> – <a href="https://github.com/truptibhatkar/diabetes_prediction" target="_blank">GitHub</a></li>
-      <li>🧠 <strong>Job Role Recommender using NLP</strong> – <a href="https://github.com/truptibhatkar/Similar_job_reccomender" target="_blank">GitHub</a></li>
-      <li>💊 <strong>Drug Classification (TCS iON)</strong> – <a href="https://github.com/truptibhatkar/drug_classification_tcsion" target="_blank">GitHub</a></li>
-      <li>🏠 <strong>California Housing Price Prediction</strong> – <a href="https://github.com/truptibhatkar/california_housing_price" target="_blank">GitHub</a></li>
-      <li>🌸 <strong>Iris Classifier Streamlit App</strong> – <a href="https://github.com/truptibhatkar/iris_classifier_streamlit" target="_blank">GitHub</a></li>
-      <li>🤖 <strong>Chat Bot using Mistral AI</strong> – <a href="https://github.com/truptibhatkar/chat_bot" target="_blank">GitHub</a></li>
-      <li>🎵 <strong>EUPHORIA - Music App (Flutter)</strong> – <a href="https://github.com/truptibhatkar/EUPHORIA" target="_blank">GitHub</a></li>
-      <li>📚 <strong>Library Management System (MySQL)</strong> – <a href="https://github.com/truptibhatkar/Library_management_mysql" target="_blank">GitHub</a></li>
-    </ul>
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="assets/diabetes.png" alt="Diabetes Prediction">
+        <div class="card-content">
+          <h3>Diabetes Prediction</h3>
+          <p>Used Random Forest and SMOTE to predict diabetes with 97% accuracy. Flask-based website UI.</p>
+          <a href="https://github.com/truptibhatkar/diabetes_prediction" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="assets/recommender.png" alt="Job Role Recommender">
+        <div class="card-content">
+          <h3>Job Role Recommender</h3>
+          <p>Built using TF-IDF & Cosine Similarity. Streamlit-based app for role recommendations.</p>
+          <a href="https://github.com/truptibhatkar/Similar_job_reccomender" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Add more cards similarly -->
+      <div class="card">
+        <img src="assets/drug.png" alt="Drug Classification">
+        <div class="card-content">
+          <h3>Drug Classification</h3>
+          <p>Built classification model using XGBoost & Random Forest during internship at TCS iON.</p>
+          <a href="https://github.com/truptibhatkar/drug_classification_tcsion" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/euphoria.png" alt="Euphoria Music App">
+        <div class="card-content">
+          <h3>EUPHORIA - Music App</h3>
+          <p>Flutter-based music app with Firebase authentication and integrated payments.</p>
+          <a href="https://github.com/truptibhatkar/EUPHORIA" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/chatbot.png" alt="Chat Bot">
+        <div class="card-content">
+          <h3>Chat Bot (Mistral AI)</h3>
+          <p>Built a simple chatbot using LLM (Mistral). Deployed for local interaction.</p>
+          <a href="https://github.com/truptibhatkar/chat_bot" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/library.png" alt="Library Management">
+        <div class="card-content">
+          <h3>Library Management (MySQL)</h3>
+          <p>Used CRUD operations in MySQL to build an inventory system.</p>
+          <a href="https://github.com/truptibhatkar/Library_management_mysql" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <footer>
-    💼 Portfolio powered by GitHub Pages | © 2025 Trupti Bhatkar
+    &copy; 2025 Trupti Bhatkar | All rights reserved
   </footer>
+
 </body>
 </html>
+
 
